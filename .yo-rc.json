@@ -1,12 +1,12 @@
 {
   "generator-angular-library": {
     "githubUsername": "mkeeton",
-    "githubRepoName": "angular-issauth",
-    "npmModuleName": "angular-issauth",
-    "moduleGlobal": "angularISSauth",
-    "ngModuleName": "AngularISSauthModule",
-    "selectorPrefix": "issauth",
-    "projectTitle": "angular issauth",
+    "githubRepoName": "angular-iss-authentication",
+    "npmModuleName": "angular-iss-authentication",
+    "moduleGlobal": "angularISSauthentication",
+    "ngModuleName": "AngularISSauthenticationModule",
+    "selectorPrefix": "iss-authentication",
+    "projectTitle": "angular iss authentication",
     "projectDescription": "ISS Authentication Integration Components",
     "authorName": "Martin Keeton"
   }

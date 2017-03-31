@@ -1,8 +1,8 @@
 {
-  "name": "angular-issauth",
+  "name": "angular-iss-authentication",
   "version": "0.0.0",
   "description": "ISS Authentication Integration Components",
-  "main": "./bundles/angular-issauth.umd.js",
+  "main": "./bundles/angular-iss-authentication.umd.js",
   "module": "./index.js",
   "typings": "./index.d.ts",
   "scripts": {
@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mkeeton/angular-issauth.git"
+    "url": "git+https://github.com/mkeeton/angular-iss-authentication.git"
   },
   "keywords": [
     "angular2",
@@ -37,9 +37,9 @@
   "author": "Martin Keeton",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mkeeton/angular-issauth/issues"
+    "url": "https://github.com/mkeeton/angular-iss-authentication/issues"
   },
-  "homepage": "https://github.com/mkeeton/angular-issauth#readme",
+  "homepage": "https://github.com/mkeeton/angular-iss-authentication#readme",
   "devDependencies": {
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
