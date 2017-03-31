@@ -6,14 +6,14 @@ const pkg = require('./package.json');
 
 export default {
   entry: {
-    'angular-issauth.umd': path.join(__dirname, 'src', 'index.ts'),
-    'angular-issauth.umd.min': path.join(__dirname, 'src', 'index.ts'),
+    'angular-iss-authentication.umd': path.join(__dirname, 'src', 'index.ts'),
+    'angular-iss-authentication.umd.min': path.join(__dirname, 'src', 'index.ts'),
   },
   output: {
     path: path.join(__dirname, 'dist', 'bundles'),
     filename: '[name].js',
     libraryTarget: 'umd',
-    library: 'angularissauth'
+    library: 'angulariss-authentication'
   },
   externals: [
     angularExternals(),
@@ -49,7 +49,7 @@ export default {
 /**
  * ${pkg.name} - ${pkg.description}
  * @version v${pkg.version}
- * @author ${pkg.author}
+ * @author ${pkg.authenticationor}
  * @link ${pkg.homepage}
  * @license ${pkg.license}
  */

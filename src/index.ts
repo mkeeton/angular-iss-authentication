@@ -1,4 +1,4 @@
-export * from './angular-issauth.module';
+export * from './angular-iss-authentication.module';
 export * from './Classes/apiResponse';
 export * from './Classes/user';
 export * from './Services/api.service';

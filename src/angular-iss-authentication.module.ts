@@ -34,11 +34,11 @@ import { UserService } from './Services/user.service';
 	LoginComponent
   ]
 })
-export class AngularISSauthModule {
+export class AngularISSauthenticationModule {
 
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: AngularISSauthModule
+      ngModule: AngularISSauthenticationModule
     };
   }
 

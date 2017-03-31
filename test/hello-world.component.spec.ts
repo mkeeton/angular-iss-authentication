@@ -5,14 +5,14 @@ import {
 } from '@angular/core/testing';
 import { expect } from 'chai';
 import { HelloWorldComponent } from '../src/hello-world.component';
-import { AngularISSauthModule } from '../src';
+import { AngularISSauthenticationModule } from '../src';
 
-describe('issauth-hello-world component', () => {
+describe('iss-authentication-hello-world component', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [
-        AngularISSauthModule.forRoot()
+        AngularISSauthenticationModule.forRoot()
       ]
     });
   });
@@ -20,7 +20,7 @@ describe('issauth-hello-world component', () => {
   it('should say hello world', () => {
     const fixture: ComponentFixture<HelloWorldComponent> = TestBed.createComponent(HelloWorldComponent);
     fixture.detectChanges();
-    expect(fixture.nativeElement.innerHTML.trim()).to.equal('Hello world from the angular issauth module!');
+    expect(fixture.nativeElement.innerHTML.trim()).to.equal('Hello world from the angular iss authentication module!');
   });
 
 });

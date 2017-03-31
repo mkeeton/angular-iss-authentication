@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'issauth-hello-world',
+  selector: 'iss-authentication-hello-world',
   template: 'Hello world from the {{ projectTitle }} module!'
 })
 export class HelloWorldComponent {
-  projectTitle: string = 'angular issauth';
+  projectTitle: string = 'angular iss authentication';
 }

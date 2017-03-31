@@ -1,14 +1,14 @@
-# angular issauth
-[![Build Status](https://travis-ci.org/mkeeton/angular-issauth.svg?branch=master)](https://travis-ci.org/mkeeton/angular-issauth)
-[![codecov](https://codecov.io/gh/mkeeton/angular-issauth/branch/master/graph/badge.svg)](https://codecov.io/gh/mkeeton/angular-issauth)
-[![npm version](https://badge.fury.io/js/angular-issauth.svg)](http://badge.fury.io/js/angular-issauth)
-[![devDependency Status](https://david-dm.org/mkeeton/angular-issauth/dev-status.svg)](https://david-dm.org/mkeeton/angular-issauth?type=dev)
-[![GitHub issues](https://img.shields.io/github/issues/mkeeton/angular-issauth.svg)](https://github.com/mkeeton/angular-issauth/issues)
-[![GitHub stars](https://img.shields.io/github/stars/mkeeton/angular-issauth.svg)](https://github.com/mkeeton/angular-issauth/stargazers)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/mkeeton/angular-issauth/master/LICENSE)
+# angular iss-authentication
+[![Build Status](https://travis-ci.org/mkeeton/angular-iss-authentication.svg?branch=master)](https://travis-ci.org/mkeeton/angular-iss-authentication)
+[![codecov](https://codecov.io/gh/mkeeton/angular-iss-authentication/branch/master/graph/badge.svg)](https://codecov.io/gh/mkeeton/angular-iss-authentication)
+[![npm version](https://badge.fury.io/js/angular-iss-authentication.svg)](http://badge.fury.io/js/angular-iss-authentication)
+[![devDependency Status](https://david-dm.org/mkeeton/angular-iss-authentication/dev-status.svg)](https://david-dm.org/mkeeton/angular-iss-authentication?type=dev)
+[![GitHub issues](https://img.shields.io/github/issues/mkeeton/angular-iss-authentication.svg)](https://github.com/mkeeton/angular-iss-authentication/issues)
+[![GitHub stars](https://img.shields.io/github/stars/mkeeton/angular-iss-authentication.svg)](https://github.com/mkeeton/angular-iss-authentication/stargazers)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/mkeeton/angular-iss-authentication/master/LICENSE)
 
 ## Demo
-https://mkeeton.github.io/angular-issauth/
+https://mkeeton.github.io/angular-iss-authentication/
 
 ## Table of contents
 
@@ -26,18 +26,18 @@ Highfield Authentication Integration Components
 
 Install through npm:
 ```
-npm install --save angular-issauth
+npm install --save angular-iss-authentication
 ```
 
 Then include in your apps module:
 
 ```typescript
 import { Component, NgModule } from '@angular/core';
-import { AngularISSauthModule } from 'angular-issauth';
+import { AngularISS-authenticationModule } from 'angular-iss-authentication';
 
 @NgModule({
   imports: [
-    AngularISSauthModule.forRoot()
+    AngularISSauthenticationModule.forRoot()
   ]
 })
 export class MyModule {}
@@ -53,19 +53,19 @@ import { Component } from '@angular/core';
 export class MyComponent {}
 ```
 
-You may also find it useful to view the [demo source](https://github.com/mkeeton/angular-issauth/blob/master/demo/demo.component.ts).
+You may also find it useful to view the [demo source](https://github.com/mkeeton/angular-iss-authentication/blob/master/demo/demo.component.ts).
 
 ### Usage without a module bundler
 ```
-<script src="node_modules/angular-issauth/bundles/angular-issauth.umd.js"></script>
+<script src="node_modules/angular-iss-authentication/bundles/angular-iss-authentication.umd.js"></script>
 <script>
-    // everything is exported angularISSauth namespace
+    // everything is exported angularISSauthentication namespace
 </script>
 ```
 
 ## Documentation
 All documentation is auto-generated from the source via [compodoc](https://compodoc.github.io/compodoc/) and can be viewed here:
-https://mkeeton.github.io/angular-issauth/docs/
+https://mkeeton.github.io/angular-iss-authentication/docs/
 
 ## Development
 

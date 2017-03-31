@@ -8,15 +8,15 @@ import { StoredSettingService } from './Services/storedSettings.service';
 import { UserService } from './Services/user.service';
 
 @Component({
-    selector: 'issauth-login-page',
-    template: '<div id="issauth-authenticationLogin"></div>',
+    selector: 'iss-authentication-login-page',
+    template: '<div id="iss-authentication-authenticationLogin"></div>',
 })
 
 export class LoginComponent implements OnInit {
 
     constructor(private currentUserService: CurrentUserService,
         private userService: UserService,
-        private authService: AuthenticationService) {
+        private authenticationService: AuthenticationService) {
     }
 
     public ngOnInit() : any {
@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
     }
 
     public showLogin() : any {
-        this.authService.login('issauth-authenticationLogin')
+        this.authenticationService.login('iss-authentication-authenticationLogin')
             .subscribe((res) => {
                 this.getCurrentUser();
             });
