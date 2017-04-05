@@ -1,6 +1,7 @@
 export * from './angular-iss-authentication.module';
 export * from './Classes/apiResponse';
 export * from './Classes/user';
+export * from './Classes/xdmInstance';
 export * from './Services/api.service';
 export * from './Services/authentication.service';
 export * from './Services/authenticated.service';

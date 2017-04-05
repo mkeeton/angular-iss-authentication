@@ -1,6 +1,7 @@
 import { Injectable, Inject } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Parameter } from '../Classes/parameter';
+import { XDMInstance } from '../Classes/xdmInstance';
 declare var easyXDM: any;
 
 @Injectable()
@@ -13,12 +14,15 @@ export class EasyXDMService {
     private remoteData: Observable<string[]>;
     private remoteFrame: Observable<string[]>;
 
+	private instances: Array<XDMInstance>;
+
     public Msg(serverURL: string, msg: string, namespace: string): Observable<string[]> {
         if (namespace === '') {
             namespace = 'Defaultns';
         }
         this.data = new Observable((observer) => {
-            this.socket = new easyXDM.Socket({
+			let xdmInstance: any = this.getEasyXDM('Authentication');
+            this.socket = new xdmInstance.Socket({
                 onMessage: (message, origin) => {
                     observer.next(message);
                     observer.complete();
@@ -37,7 +41,8 @@ export class EasyXDMService {
             namespace = 'Defaultns';
         }
         this.remoteData = new Observable((observer) => {
-            this.remote = new easyXDM.Rpc({
+			let xdmInstance: any = this.getEasyXDM('Authentication');
+            this.remote = new xdmInstance.Rpc({
                 remote: serverURL,
             }, { remote: { postMessage: {} } });
 
@@ -64,7 +69,8 @@ export class EasyXDMService {
             namespace = 'Defaultns';
         }
         this.remoteFrame = new Observable((observer) => {
-            this.frameSocket = new easyXDM.Socket({
+				let xdmInstance: any = this.getEasyXDM('Authentication');
+				this.frameSocket = new xdmInstance.Socket({
                 container: document.getElementById(frameContainer),
                 onMessage: (message, origin) => {
                     observer.next(message);
@@ -82,5 +88,20 @@ export class EasyXDMService {
         );
         return this.remoteFrame;
     }
+
+	private getEasyXDM(namespace: string): any {
+		let found: boolean = false;
+		for (let i of this.instances) {
+			if (i.Namespace === namespace) {
+				found = true;
+				return i.Instance;
+			}
+		}
+		if (found === false) {
+			let newInstance: any = new easyXDM.noConflict(namespace);
+			this.instances.push(new XDMInstance(namespace, newInstance));
+			return newInstance;
+		}
+	}
 
 }

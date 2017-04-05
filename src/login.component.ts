@@ -34,8 +34,8 @@ export class LoginComponent implements OnInit {
             }));
     }
 
-    public showLogin() : any {
-        this.authenticationService.login('iss-authentication-authenticationLogin')
+    public showLogin(withRegister: boolean = false) : any {
+        this.authenticationService.login('iss-authentication-authenticationLogin', withRegister)
             .subscribe((res) => {
                 this.getCurrentUser();
             });
