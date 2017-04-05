@@ -14,7 +14,7 @@ export class EasyXDMService {
     private remoteData: Observable<string[]>;
     private remoteFrame: Observable<string[]>;
 
-	private instances: Array<XDMInstance>;
+	private instances: Array<XDMInstance> = new Array<XDMInstance>();
 
     public Msg(serverURL: string, msg: string, namespace: string): Observable<string[]> {
         if (namespace === '') {
