@@ -1,6 +1,6 @@
 {
   "name": "angular-iss-authentication",
-  "version": "0.0.8",
+  "version": "0.0.18",
   "description": "ISS Authentication Integration Components",
   "main": "./bundles/angular-iss-authentication.umd.js",
   "module": "./index.js",
