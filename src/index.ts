@@ -1,4 +1,5 @@
 export * from './angular-iss-authentication.module';
+export * from './login.component';
 export * from './Classes/apiResponse';
 export * from './Classes/user';
 export * from './Classes/xdmInstance';

@@ -21,7 +21,6 @@ export class LoginComponent implements OnInit {
 
     public ngOnInit() : any {
         this.getCurrentUser();
-        this.showLogin();
     }
 
     public getCurrentUser() : any {
@@ -40,4 +39,8 @@ export class LoginComponent implements OnInit {
                 this.getCurrentUser();
             });
     }
+
+	public hideLogin() : any {
+		document.getElementById('iss-authentication-authenticationLogin').innerHTML = '';
+	}
 }
